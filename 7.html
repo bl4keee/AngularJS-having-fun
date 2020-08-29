@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS | Filters </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+  
+Name: <input type="text" ng-model="name"><br>
+The name is: {{name | uppercase}}
+
+<br><br>
+        
+Currency: <input type="text" ng-model="price"><br>
+The currency is: {{price | currency:"PLN "}}
+
+<br><br>
+
+Number: <input type="text" ng-model="number"><br>
+The number is: {{number | number:3}}
+   
+</body>
+</html>
